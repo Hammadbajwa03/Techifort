@@ -4,48 +4,32 @@ import { cn } from "@/lib/utils";
 
 type LogoProps = {
   className?: string;
+  /** Kept for Footer compatibility — mark-only logo, no text */
   variant?: "default" | "light";
 };
 
-export function Logo({ className, variant = "default" }: LogoProps) {
+export function Logo({ className }: LogoProps) {
   return (
     <Link
       href="/"
       className={cn(
-        "group inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 sm:gap-3",
+        "group inline-flex items-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
         className
       )}
       aria-label="Techifort home"
     >
-      <span className="relative flex h-11 w-11 shrink-0 items-center justify-center sm:h-12 sm:w-12 lg:h-14 lg:w-14">
+      <span className="relative flex h-14 w-14 shrink-0 items-center justify-center sm:h-16 sm:w-16 lg:h-20 lg:w-20">
         <Image
           src="/images/techifort-mark-nav-2x.png"
-          alt=""
+          alt="Techifort"
           width={384}
           height={384}
           quality={100}
           priority
           unoptimized
           className="h-full w-full object-contain"
-          sizes="(min-width: 1024px) 56px, (min-width: 640px) 48px, 44px"
+          sizes="(min-width: 1024px) 80px, (min-width: 640px) 64px, 56px"
         />
-      </span>
-      <span
-        className={cn(
-          "text-xl font-bold tracking-tight sm:text-2xl",
-          variant === "light" ? "text-white" : "text-slate-900 dark:text-white"
-        )}
-      >
-        Techi
-        <span
-          className={cn(
-            variant === "light"
-              ? "text-brand-300"
-              : "text-brand-600 dark:text-brand-400"
-          )}
-        >
-          fort
-        </span>
       </span>
     </Link>
   );
