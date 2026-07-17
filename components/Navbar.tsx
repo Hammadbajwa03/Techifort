@@ -56,7 +56,7 @@ export function Navbar() {
           : "border-b border-transparent bg-transparent"
       )}
     >
-      <nav className="container-padded flex h-16 items-center justify-between gap-3 lg:h-20">
+      <nav className="container-padded flex h-20 items-center justify-between gap-3 sm:h-24 lg:h-28">
         <Logo variant={overHero ? "light" : "default"} />
 
         <ul className="hidden items-center gap-0.5 xl:flex">

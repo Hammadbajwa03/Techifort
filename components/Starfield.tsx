@@ -239,7 +239,7 @@ export function Starfield({ reduced = false }: StarfieldProps) {
             <div className="relative flex h-full w-full items-center justify-center rounded-full bg-[#050814] shadow-[0_0_60px_rgba(37,99,235,0.7)] ring-2 ring-brand-400/40">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-brand-600/20 via-transparent to-brand-400/10" />
               <Image
-                src="/images/techifort-mark-512.png"
+                src="/images/techifort-mark-icon-512.png"
                 alt="Techifort"
                 width={160}
                 height={160}

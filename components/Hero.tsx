@@ -119,7 +119,7 @@ export function Hero({ contentReady = true }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden pt-20"
+      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden pt-24 sm:pt-28 lg:pt-32"
     >
       {/* Background untouched — Starfield owns orbits / stars / logos */}
       <Starfield reduced={reducedMotion} />
