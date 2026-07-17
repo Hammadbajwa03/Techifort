@@ -4,56 +4,36 @@ import { cn } from "@/lib/utils";
 
 type LogoProps = {
   className?: string;
+  /** Kept for Footer API compatibility */
   variant?: "default" | "light";
 };
 
 /**
- * Sharp TF mark + crisp Techifort wordmark.
- * Same on local and Vercel — avoids tiny baked-in image text that blurs.
+ * Full designer lockup (icon + TECHIFORT + tagline) — same as the local look.
+ * Single image so Vercel matches localhost after deploy.
  */
-export function Logo({ className, variant = "default" }: LogoProps) {
+export function Logo({ className }: LogoProps) {
   return (
     <Link
       href="/"
       className={cn(
-        "group inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 sm:gap-3",
+        "group inline-flex items-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
         className
       )}
       aria-label="Techifort home"
     >
-      <span className="relative flex h-11 w-11 shrink-0 items-center justify-center sm:h-12 sm:w-12 lg:h-14 lg:w-14">
+      <span className="relative flex h-[4.5rem] w-[3rem] shrink-0 items-center justify-center sm:h-[5rem] sm:w-[3.35rem] lg:h-[5.5rem] lg:w-[3.7rem]">
         <Image
-          src="/images/techifort-mark-nav-2x.png"
-          alt=""
-          width={384}
-          height={384}
+          src="/images/techifort-logo-lockup.png"
+          alt="Techifort"
+          width={553}
+          height={844}
           quality={100}
           priority
           unoptimized
           className="h-full w-full object-contain"
-          sizes="(min-width: 1024px) 56px, 48px"
+          sizes="(min-width: 1024px) 60px, (min-width: 640px) 54px, 48px"
         />
-      </span>
-      <span className="flex flex-col leading-none">
-        <span
-          className={cn(
-            "text-lg font-bold tracking-tight sm:text-xl lg:text-2xl",
-            variant === "light"
-              ? "text-white"
-              : "text-slate-900 dark:text-white"
-          )}
-        >
-          Techi
-          <span
-            className={cn(
-              variant === "light"
-                ? "text-brand-300"
-                : "text-brand-600 dark:text-brand-400"
-            )}
-          >
-            fort
-          </span>
-        </span>
       </span>
     </Link>
   );
