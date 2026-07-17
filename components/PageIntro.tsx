@@ -70,14 +70,24 @@ export function PageIntro({ children }: PageIntroProps) {
             >
               <div className="relative flex h-28 w-28 items-center justify-center sm:h-32 sm:w-32">
                 <Image
-                  src="/images/techifort-mark.png"
+                  src="/images/techifort-mark-splash-mobile.png"
                   alt="Techifort"
-                  width={256}
-                  height={256}
+                  width={112}
+                  height={112}
                   quality={100}
                   priority
                   unoptimized
-                  className="h-full w-full object-contain drop-shadow-[0_0_28px_rgba(37,99,235,0.45)]"
+                  className="h-full w-full object-contain drop-shadow-[0_0_28px_rgba(37,99,235,0.45)] sm:hidden"
+                />
+                <Image
+                  src="/images/techifort-mark-splash-tablet.png"
+                  alt="Techifort"
+                  width={128}
+                  height={128}
+                  quality={100}
+                  priority
+                  unoptimized
+                  className="hidden h-full w-full object-contain drop-shadow-[0_0_28px_rgba(37,99,235,0.45)] sm:block"
                 />
               </div>
               <p className="text-base font-semibold tracking-[0.3em] text-white/80">

@@ -29,9 +29,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/techifort-mark.png", type: "image/png" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/images/techifort-mark-512.png", type: "image/png" },
     ],
-    apple: [{ url: "/images/techifort-mark.png" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     title: "Techifort — Software Development & Digital Agency",
