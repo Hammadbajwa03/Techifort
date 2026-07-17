@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Techifort — Logo Asset Specs</title>
+  <style>
+    @page { margin: 18mm 16mm; size: A4; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #0f172a;
+      line-height: 1.45;
+      font-size: 11pt;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 20pt;
+      margin: 0 0 8px;
+      color: #1e3a8a;
+    }
+    h2 {
+      font-size: 13pt;
+      margin: 22px 0 8px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #2563eb;
+      color: #1e3a8a;
+      page-break-after: avoid;
+    }
+    h3 {
+      font-size: 11.5pt;
+      margin: 14px 0 6px;
+      color: #2563eb;
+      page-break-after: avoid;
+    }
+    p, li { margin: 6px 0; }
+    .meta { color: #475569; margin-bottom: 16px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 12px;
+      font-size: 9.5pt;
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #eff6ff;
+      color: #1e3a8a;
+      font-weight: 600;
+    }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 9pt;
+      background: #f1f5f9;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+    ul { padding-left: 1.2em; }
+    .summary {
+      margin-top: 18px;
+      padding: 12px 14px;
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .swatches { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 9.5pt;
+    }
+    .dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      border: 1px solid #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Techifort — Logo Asset Specs</h1>
+  <p class="meta">
+    <strong>For:</strong> Graphic Designer<br />
+    <strong>Project:</strong> Techifort website<br />
+    <strong>Date:</strong> July 2026<br />
+    <strong>Use:</strong> Export assets for web (navbar, footer, hero, favicon)
+  </p>
+
+  <h2>Brand mark currently in use</h2>
+  <table>
+    <thead>
+      <tr><th>File on site</th><th>Current size</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>techifort-mark.png</code></td><td>604 × 604 px</td><td>Primary mark used across the site</td></tr>
+      <tr><td><code>favicon-32.png</code></td><td>32 × 32 px</td><td>Browser tab icon</td></tr>
+      <tr><td><code>favicon.svg</code></td><td>32 × 32 viewBox</td><td>Placeholder “Tf” — replace with real mark if possible</td></tr>
+      <tr><td><code>techifort-logo.png</code></td><td>379 × 506 px</td><td><strong>Not used</strong> on the live site yet</td></tr>
+      <tr><td><code>techifort-logo@2x.png</code></td><td>758 × 1012 px</td><td><strong>Not used</strong> on the live site yet</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Where the logo appears &amp; display sizes</h2>
+  <p>All sizes below are <strong>on-screen (CSS)</strong> sizes. For Retina/HiDPI screens, export at <strong>2×–3×</strong> those values (see Recommended Exports).</p>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Placement</th><th>Display size</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Navbar</strong> (all pages)</td><td><strong>40 × 40 px</strong> (mobile) / <strong>44 × 44 px</strong> (tablet+)</td><td>Square brand mark only; wordmark “Techifort” is text beside it</td></tr>
+      <tr><td>2</td><td><strong>Footer</strong></td><td>Same as navbar — <strong>40 × 40</strong> / <strong>44 × 44</strong></td><td>Same mark component</td></tr>
+      <tr><td>3</td><td><strong>Page intro splash</strong> (site load)</td><td><strong>112 × 112 px</strong> (mobile) / <strong>128 × 128 px</strong> (tablet+)</td><td>Large centered mark</td></tr>
+      <tr><td>4</td><td><strong>Homepage hero — core orb</strong></td><td>Mark roughly <strong>52–92 px</strong> (scales with viewport)</td><td>Mark inside a circular glowing core (~72–128 px circle)</td></tr>
+      <tr><td>5</td><td><strong>Favicon</strong> (browser tab)</td><td><strong>32 × 32 px</strong></td><td>Small icon</td></tr>
+      <tr><td>6</td><td><strong>Apple touch / app icon</strong></td><td>Target <strong>180 × 180 px</strong></td><td>Currently falls back to the main mark</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Recommended exports (please deliver these)</h2>
+  <p>Please export <strong>transparent PNG</strong> (and <strong>SVG</strong> for the mark if available). Prefer square crop for the mark, centered, with a little padding so it doesn’t clip.</p>
+
+  <h3>A) Primary brand mark (required)</h3>
+  <table>
+    <thead>
+      <tr><th>Asset name</th><th>Size</th><th>Format</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>techifort-mark.svg</code></td><td>Vector (square artboard)</td><td>SVG</td><td>Best quality — scales everywhere</td></tr>
+      <tr><td><code>techifort-mark.png</code></td><td><strong>1024 × 1024 px</strong></td><td>PNG-24, transparent</td><td>Main web mark (replaces current 604×604)</td></tr>
+      <tr><td><code>techifort-mark-512.png</code></td><td><strong>512 × 512 px</strong></td><td>PNG-24, transparent</td><td>Fallback / lighter weight</td></tr>
+    </tbody>
+  </table>
+
+  <h3>B) Favicons (required)</h3>
+  <table>
+    <thead>
+      <tr><th>Asset name</th><th>Size</th><th>Format</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>favicon-32.png</code></td><td><strong>32 × 32 px</strong></td><td>PNG</td><td>Browser tab</td></tr>
+      <tr><td><code>favicon-48.png</code></td><td><strong>48 × 48 px</strong></td><td>PNG</td><td>Optional sharper tabs</td></tr>
+      <tr><td><code>apple-touch-icon.png</code></td><td><strong>180 × 180 px</strong></td><td>PNG</td><td>iOS / Apple home screen</td></tr>
+      <tr><td><code>favicon.ico</code></td><td>Multi: 16, 32, 48</td><td>ICO</td><td>Optional legacy browsers</td></tr>
+    </tbody>
+  </table>
+
+  <h3>C) Full logo / wordmark (optional — not wired yet)</h3>
+  <p>If you also design a horizontal lockup (icon + “Techifort” wordmark as one image):</p>
+  <table>
+    <thead>
+      <tr><th>Asset name</th><th>Suggested size</th><th>Format</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>techifort-logo-horizontal.svg</code></td><td>Vector</td><td>SVG</td><td>Preferred</td></tr>
+      <tr><td><code>techifort-logo-horizontal.png</code></td><td>Width <strong>1200 px</strong> (height proportional)</td><td>PNG transparent</td><td>2× web use</td></tr>
+      <tr><td><code>techifort-logo-horizontal@2x.png</code></td><td>Width <strong>2400 px</strong></td><td>PNG transparent</td><td>Retina</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Quick checklist for delivery</h2>
+  <ul>
+    <li>☐ Square mark at <strong>1024 × 1024</strong> PNG (transparent)</li>
+    <li>☐ Same mark as <strong>SVG</strong> (if possible)</li>
+    <li>☐ Favicon <strong>32 × 32</strong> PNG</li>
+    <li>☐ Apple icon <strong>180 × 180</strong> PNG</li>
+    <li>☐ Optional: horizontal full logo SVG/PNG</li>
+    <li>☐ Keep safe margin inside the square (mark not touching edges)</li>
+    <li>☐ No baked-in drop shadows if possible (site adds glow in CSS)</li>
+    <li>☐ Works on <strong>dark</strong> backgrounds (hero/nav over dark) and <strong>light</strong> backgrounds (footer/scrolled nav)</li>
+  </ul>
+
+  <h2>Color context (site)</h2>
+  <div class="swatches">
+    <div class="swatch"><span class="dot" style="background:#2563EB"></span> Brand blue <code>#2563EB</code></div>
+    <div class="swatch"><span class="dot" style="background:#1E3A8A"></span> Deep blue <code>#1E3A8A</code></div>
+    <div class="swatch"><span class="dot" style="background:#60A5FA"></span> Light blue <code>#60A5FA</code></div>
+    <div class="swatch"><span class="dot" style="background:#0B1120"></span> Dark hero <code>#0B1120</code></div>
+  </div>
+  <p>Mark should remain clear on both dark and light UI.</p>
+
+  <p class="summary">
+    Deliver one sharp square mark (1024×1024 PNG + SVG) plus 32×32 and 180×180 favicons; largest UI use is ~128px, navbar is ~44px.
+  </p>
+</body>
+</html>

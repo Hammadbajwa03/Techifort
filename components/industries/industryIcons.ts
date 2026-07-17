@@ -1,0 +1,40 @@
+"use client";
+
+import {
+  Building2,
+  Car,
+  Cpu,
+  Factory,
+  Fuel,
+  Gamepad2,
+  GraduationCap,
+  HeartPulse,
+  Home,
+  Landmark,
+  Network,
+  Plane,
+  ShoppingCart,
+  Stethoscope,
+  Truck,
+  UtensilsCrossed,
+  type LucideIcon,
+} from "lucide-react";
+
+export const industryIconMap: Record<string, LucideIcon> = {
+  Cpu,
+  ShoppingCart,
+  Home,
+  HeartPulse,
+  Landmark,
+  GraduationCap,
+  Truck,
+  UtensilsCrossed,
+  Stethoscope,
+  Plane,
+  Gamepad2,
+  Car,
+  Fuel,
+  Factory,
+  Building2,
+  Network,
+};
