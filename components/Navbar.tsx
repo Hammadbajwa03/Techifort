@@ -56,7 +56,7 @@ export function Navbar() {
           : "border-b border-transparent bg-transparent"
       )}
     >
-      <nav className="container-padded flex h-20 items-center justify-between gap-3 sm:h-24 lg:h-28">
+      <nav className="container-padded flex h-16 items-center justify-between gap-3 sm:h-20">
         {/* White over dark hero; theme swap once the nav is solid */}
         <Logo variant={overHero ? "white" : "theme"} />
 
