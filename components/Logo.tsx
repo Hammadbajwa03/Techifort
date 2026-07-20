@@ -32,7 +32,7 @@ export function Logo({ className, variant = "theme" }: LogoProps) {
     <Link
       href="/"
       className={cn(
-        "group inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 sm:gap-3",
+        "group inline-flex items-center gap-0 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
         className
       )}
       aria-label="Techifort home"
@@ -74,7 +74,7 @@ export function Logo({ className, variant = "theme" }: LogoProps) {
 
       <span
         className={cn(
-          "text-lg font-bold tracking-tight sm:text-xl lg:text-2xl",
+          "-ml-1 text-lg font-bold tracking-tight sm:-ml-1.5 sm:text-xl lg:text-2xl",
           mode === "white" && "text-white",
           mode === "blue" && "text-slate-900",
           mode === "theme" && "text-slate-900 dark:text-white"
