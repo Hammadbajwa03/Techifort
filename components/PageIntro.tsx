@@ -66,33 +66,21 @@ export function PageIntro({ children }: PageIntroProps) {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1.05 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col items-center gap-3"
+              className="flex items-center justify-center"
             >
-              <div className="relative flex h-28 w-28 items-center justify-center sm:h-32 sm:w-32">
+              {/* Preloader is always on dark bg — white lockup for contrast */}
+              <div className="relative flex h-40 w-[6.5rem] items-center justify-center sm:h-48 sm:w-32">
                 <Image
-                  src="/images/techifort-mark-splash-mobile.png"
+                  src="/images/logo-white.png"
                   alt="Techifort"
-                  width={112}
-                  height={112}
+                  width={497}
+                  height={788}
                   quality={100}
                   priority
                   unoptimized
-                  className="h-full w-full object-contain drop-shadow-[0_0_28px_rgba(37,99,235,0.45)] sm:hidden"
-                />
-                <Image
-                  src="/images/techifort-mark-splash-tablet.png"
-                  alt="Techifort"
-                  width={128}
-                  height={128}
-                  quality={100}
-                  priority
-                  unoptimized
-                  className="hidden h-full w-full object-contain drop-shadow-[0_0_28px_rgba(37,99,235,0.45)] sm:block"
+                  className="h-full w-full object-contain drop-shadow-[0_0_28px_rgba(255,255,255,0.25)]"
                 />
               </div>
-              <p className="text-base font-semibold tracking-[0.3em] text-white/80">
-                TECHIFORT
-              </p>
             </motion.div>
           </motion.div>
         )}

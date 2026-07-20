@@ -57,7 +57,7 @@ export function Navbar() {
       )}
     >
       <nav className="container-padded flex h-20 items-center justify-between gap-3 sm:h-24 lg:h-28">
-        <Logo variant={overHero ? "light" : "default"} />
+        <Logo />
 
         <ul className="hidden items-center gap-0.5 xl:flex">
           {navLinks.map((link) => (

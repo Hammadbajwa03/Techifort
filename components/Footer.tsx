@@ -28,12 +28,9 @@ export function Footer() {
       <div className="container-padded section-padding !pb-12 !pt-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <span className="dark:hidden">
-              <Logo />
-            </span>
-            <span className="hidden dark:inline">
-              <Logo variant="light" />
-            </span>
+            {/* Footer is light in light mode (bg-white/35) and dark in dark mode —
+                same theme-driven logo swap as the navbar (blue / white). */}
+            <Logo />
             <p className="mt-4 max-w-xs text-base leading-relaxed text-slate-500 dark:text-slate-400">
               Techifort is a software development & digital agency delivering
               web, mobile, blockchain, SEO, and custom digital solutions
