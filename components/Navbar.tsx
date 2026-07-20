@@ -57,7 +57,8 @@ export function Navbar() {
       )}
     >
       <nav className="container-padded flex h-20 items-center justify-between gap-3 sm:h-24 lg:h-28">
-        <Logo />
+        {/* White over dark hero; theme swap once the nav is solid */}
+        <Logo variant={overHero ? "white" : "theme"} />
 
         <ul className="hidden items-center gap-0.5 xl:flex">
           {navLinks.map((link) => (
